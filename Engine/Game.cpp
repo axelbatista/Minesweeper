@@ -21,10 +21,13 @@
 #include "MainWindow.h"
 #include "Game.h"
 
-Game::Game( MainWindow& wnd )
+bool gameIsOver = false;
+
+Game::Game(MainWindow& wnd)
 	:
-	wnd( wnd ),
-	gfx( wnd )
+	wnd(wnd),
+	gfx(wnd),
+	recta()
 {
 }
 
@@ -38,8 +41,12 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	//if (!gameIsOver)
+	recta.evaluateMouse(wnd.mouse, gameIsOver);
 }
 
 void Game::ComposeFrame()
 {
+	gfx.DrawRect(120, 120, 680, 488, { 192,192,192 });
+	recta.draw(gfx);
 }

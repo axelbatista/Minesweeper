@@ -1149,7 +1149,7 @@ void SpriteCodex::DrawTileBomb( const Vei2& pos,Graphics& gfx )
 	gfx.PutPixel( 12 + pos.x,9 + pos.y,149,101,96 );
 	gfx.PutPixel( 13 + pos.x,9 + pos.y,169,161,161 );
 	gfx.PutPixel( 0 + pos.x,10 + pos.y,128,128,128 );
-	gfx.PutPixel( 1 + pos.x,10 + pos.y,192,191,191 );
+	gfx.PutPixel( 1 + pos.x,10 + pos.y,128,191,191 );
 	gfx.PutPixel( 2 + pos.x,10 + pos.y,193,179,176 );
 	gfx.PutPixel( 3 + pos.x,10 + pos.y,217,162,145 );
 	gfx.PutPixel( 4 + pos.x,10 + pos.y,191,137,120 );
