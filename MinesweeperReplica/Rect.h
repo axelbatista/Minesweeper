@@ -41,7 +41,8 @@ private:
 
 class Rects {
 	Rect rects[805];
-	bool initialized = false;
+	static constexpr int iDim = 35;
+	static constexpr int jDim = 23;
 public:
 	Rects();
 	Rect* getRect();
@@ -51,4 +52,5 @@ public:
 	void tileFate(int i, int j);
 	void chooseTiles(int i, int j);
 	void setGameOver();
+
 };

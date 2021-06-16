@@ -41,7 +41,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	//if (!gameIsOver)
+	if (!gameIsOver)
 	recta.evaluateMouse(wnd.mouse, gameIsOver);
 }
 
